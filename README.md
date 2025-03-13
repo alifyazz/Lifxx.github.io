@@ -1,2 +1,2 @@
 # Lifxx.github.io
-portofolio web
+Web Portofolio menggunakan HTML, CSS, 
