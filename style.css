@@ -45,3 +45,16 @@ nav ul li a:hover {
     color: #007bff;
     transform: scale(1.2);
 }
+
+section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+}
+
+#home {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
