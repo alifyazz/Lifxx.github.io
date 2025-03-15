@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins',sans-serif;
@@ -42,7 +43,14 @@
             font-weight: 700;
             margin-bottom: 20px;
             color: #00f5ff;
-            }
+        }
+        .card-title {
+            font-weight: 700;
+            color: #00f5ff;
+        }
+        .card-text {
+            color: #aaa;
+        }
         .card {
             background: #1a1a1a;
             border: none;
@@ -50,7 +58,20 @@
         }
         .card:hover {
             transform: scale(1.05);
-            }
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .social-icons a {
+          margin: 0 10px;
+          color: #e0e0e0;
+          font-size: 1.5rem;
+          transition: color 0.3s;
+        }
+        .social-icons a:hover {
+          color: #00f5ff;
+        }
         footer {
             background-color: #1a1a1a;
             color: #aaa;
@@ -61,16 +82,16 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed top">
         <div class="container"
-          <a class="navbar-brand" href="#">Portofolio</a>
+          <a class="navbar-brand" href="#">Alifyazz</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -85,41 +106,49 @@
 
     <section id="about" class="py-5">
         <div class="container">
-            <div class="section-title text-center" data-aos="fade-up">
-                <h2>Tentang Saya</h2>
-                <p>Saya adalah mahasiswa Teknik Informatika yang antusias dan aktif, dengan kemampuan dalam perangkat lunak dan pemrograman. Memiliki keterampilan analisis yang kuat dan pengalaman dalam proyek kelompok. Berkomitmen untuk trus belajar dan berkontribusi dalam dunia teknologi.</p>
+            <div class="section-title text-center mb-4" data-aos="fade-up" style="transform: translateY(-20px);">
+                <h2>About Me</h2>
+                <p>HI! saya Alifya Azzahra seorang mahasiswa Teknik Informatika yang antusias dan aktif, dengan kemampuan dalam pengembangan perangkat lunak dan pemrograman. Memiliki keterampilan analitis yang kuat dan pengalaman dalam proyek kelompok. Berkomitmen untuk terus belajar dan berkontribusi dalam dunia teknologi.</p>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6" data-aos="fade-right">
-                    <img src="images/portopict.jpg" class="img-fluid rounded" alt="Tentang Saya">
+                    <img src="images/portopict.jpg" class="img-fluid rounded-circle" alt="Tentang Saya">
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <p>Saya memiliki keahlian di bidang HTML, CSS, JavaScript, dan berbagai framework modern. Setiap proyek yang saya kerjakan dirancang dengan pendekatan minimalis dan tampilan yang futuristik untuk menciptakan kesan yang kuat dan profesional.</p>
-                </div>
+                    <div class="section-title text-center mt-5" data-aos="fade-up">
+                        <h2>Follow Me Here!</h2>
+                        <p>Saya memiliki beberapa akun platform social media dibawah ini, ayo kita berteman!</p>
+                            <div class="social-icons my-3">
+                                <a href="https://github.com/alifyazz" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://x.com/alifyazzhr?t=buQ5ZuQw7xkM5c3fxFeaTg&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/alifyazzhr._?igsh=d2pmNXJyNWJld3Mx" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>
     <section id="projects" class="py-5 bg-dark">
         <div class="container">
             <div class="section-title text-center" data-aos="fade-up">
-                <h2>Proyek</h2>
-                <p>Berikut beberapa proyek yang telah saya kerjakan dengan teknologi terkini.</p>
+                <h2>Projects</h2>
+                <p>Berikut beberapa project yang telah saya kerjakan dengan teknologi terkini.</p>
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4" data-aos="zoom-in">
                     <div class="card h-100">
                         <img src="images/webseminar.jpg" class="card-img-top" alt="Proyek 1">
                         <div class="card-body">
-                            <h5 class="card-title">Proyek 1</h5>
+                            <h5 class="card-title">Project 1</h5>
                             <p class="card-text">Solusi digital dengan desain futuristik yang mengedepankan interaksi dan inovasi.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card h-100">
-                        <img src="images/websiTrivia.jpg" class="card-img-top" alt="Proyrk 2">
+                        <img src="images/websiTrivia.jpg" class="card-img-top" alt="Proyek 2">
                         <div class="card-body">
-                            <h5 class="card-title">Proyek 2</h5>
+                            <h5 class="card-title">Project 2</h5>
                             <p class="card-text">Pengembangan aplikasi web dengan tampilan modern dan responsif, dioptimalkan untuk pengalaman pengguna.</p>
                         </div>
                     </div>
@@ -128,7 +157,7 @@
                     <div class="card h-100">
                         <img src="images/podcast.jpg" class="card-img-top" alt="Proyek 3">
                         <div class="card-body">
-                            <h5 class="card-title">Proyek 3</h5>
+                            <h5 class="card-title">Project 3</h5>
                             <p class="card-text">Implementasi desain interaktif dengan teknologi terbaru untuk solusi bisnis digital.</p>
                         </div>
                     </div>
@@ -139,7 +168,7 @@
     <section id="contact" class="py-5">
         <div class="container">
             <div class="section-title text-center" data-aos="faade-up">
-                <h2>Kontak</h2>
+                <h2>Contacts</h2>
                 <p>Hubungi saya untuk kolaborasi dan proyek inovatif.</p>
             </div>
             <div class="row justify-content-center">
